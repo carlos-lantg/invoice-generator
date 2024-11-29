@@ -1,4 +1,4 @@
-#Invoice Generator
+## Invoice Generator
 
 Invoice Generator allows you quickly make invoices and save them as PDF. 
 
