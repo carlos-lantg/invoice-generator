@@ -9,7 +9,7 @@ function App() {
     if (savedInvoice) {
       data = JSON.parse(savedInvoice)
     }
-  } catch (_e) {}
+  } catch (_e) { }
 
   const onInvoiceUpdated = (invoice: Invoice) => {
     window.localStorage.setItem('invoiceData', JSON.stringify(invoice))
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="center fs-30">React Invoice Generator</h1>
+      <h1 className="center fs-30">Invoice Generator</h1>
       <InvoicePage data={data} onChange={onInvoiceUpdated} />
     </div>
   )
